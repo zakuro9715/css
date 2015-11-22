@@ -17,5 +17,5 @@ Package.onTest(function(api) {
   api.use('mongo')
   api.use('tinytest')
   api.use('css:comments')
-  api.addFiles('comments-tests.js')
+  api.addFiles('comments-server-tests.js', 'server')
 })
