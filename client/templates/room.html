@@ -1,6 +1,8 @@
 <template name="room">
-  {{#each comments}}
-    {{> comment}}
-  {{/each}}
+  <div class="comment-container">
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </div>
   {{> postForm}}
 </template>
