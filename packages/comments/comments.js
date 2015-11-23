@@ -5,5 +5,5 @@ Comments = new Mongo.Collection('comments')
 Comments.inRoom = (roomId) => Comments.find({roomId})
 
 if (Meteor.isServer) {
-  Meteor.publish('commentsInRoom', (roomId) => Comments.InRoom(roomId))
+  Meteor.publish('commentsInRoom', (roomId) => Comments.inRoom(roomId))
 }
