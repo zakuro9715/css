@@ -1,3 +1,5 @@
 <template name="room">
-  {{ id }}
+  {{#each comments}}
+    {{> comment}}
+  {{/each}}
 </template>

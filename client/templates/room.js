@@ -1,1 +1,3 @@
-Template.room.comments = () => { Comments.inRoom(Router.current().params.roomId) }
+Template.room.helpers({
+  comments: () => Comments.find(),
+})
