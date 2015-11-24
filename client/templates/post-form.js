@@ -14,7 +14,7 @@ Template.postForm.events({
       return
     }
 
-    Comments.insert({roomId, body: $body.val(), name: $name.val()})
+    Comments.insert({roomId, body: $body.val(), name: $name.val(), y: Random.choice([0, 30, 60, 90, 120])})
     $body.val('')
   },
 })
