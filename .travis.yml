@@ -1,0 +1,9 @@
+language: node_js
+before_install:
+    - curl https://install.meteor.com | /bin/sh
+    - export PATH="$HOME/.meteor:$PATH"
+    - npm install -g spacejam
+script:
+  # meteor lint commnand returns non zero if no linting error is detected.
+  - test -z "$(meteor lint 2>&1)"
+  - spacejam test-packages
